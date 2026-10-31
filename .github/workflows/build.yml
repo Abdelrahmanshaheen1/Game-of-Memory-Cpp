@@ -1,0 +1,13 @@
+name: Build and smoke test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build with warnings as errors and run the smoke test
+        run: ./smoke_test.sh

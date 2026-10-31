@@ -32,3 +32,8 @@ bin/
 
 # Logs
 *.log
+
+# Build output
+memory_match
+*.exe
+*.out
